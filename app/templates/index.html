@@ -1,0 +1,34 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APP | Empréstimos</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Empréstimos</h1>
+
+      <form action="/emprestimo" method="post">
+        <label for="casa">Valor da Casa:</label>
+        <input type="number" id="casa" name="casa" required />
+
+        <label for="salario">Salário:</label>
+        <input type="number" id="salario" name="salario" required />
+
+        <label for="tempo">Tempo (anos):</label>
+        <input type="number" id="tempo" name="tempo" required />
+
+        <input type="submit" value="Calcular" />
+        <input type="reset" value="Limpar" />
+
+        {% if resultado %}
+        <p id="resultado">{{ resultado }}</p>
+        {% endif %}
+      </form>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>
