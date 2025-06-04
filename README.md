@@ -1,4 +1,4 @@
-# Projeto Simples de Empréstimo com Flask
+# Simulaçao de Empréstimo
 
 Este é um projeto de estudo, onde refiz um exercício antigo utilizando o framework Flask.
 O objetivo é calcular se um empréstimo pode ser aprovado com base no valor da casa, salário do usuário e tempo de pagamento.
